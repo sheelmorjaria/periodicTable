@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+#periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.element {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.atomic-number,
+.symbol,
+.name,
+.mass-number,
+.group-block {
+  margin: 1px 0;
+}
+
+.nonmetal {
+  background-color: #ffcccb;
+}
+
+.noble-gas {
+  background-color: #add8e6;
+}
+
+.alkali-metal {
+  background-color: #ffebcd;
+}
+
+.alkaline-earth-metal {
+  background-color: #f37c7c;
+}
+
+.metalloid {
+  background-color: #d3d3d3;
+}
+.halogen {
+  background-color: #e9c89c;
+}
+.transition-metal {
+  background-color: #8cf094;
+}
+.post-transition-metal {
+  background-color: #8c96f0;
+}
+.lanthanide {
+  background-color: #f08cd2;
+}
+.actinide {
+  background-color: #f08c8c;
+}
+
+@media (max-width: 900px) {
+  #periodic-table {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  #periodic-table {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 350px) {
+  #periodic-table {
+    display: none;
+  }
+  #periodic-table-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+#periodic-table-image {
+  display: none;
+}
